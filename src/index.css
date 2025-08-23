@@ -8,55 +8,58 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - HSL Format */
-    --primary: 238 86% 60%; /* #4F46E5 Indigo */
-    --primary-light: 238 86% 70%;
-    --primary-dark: 238 86% 50%;
-    --primary-foreground: 0 0% 100%;
+    /* Dark Theme - AI Voice Platform */
+    --primary: 263 70% 60%; /* Neon Purple */
+    --primary-light: 263 70% 70%;
+    --primary-dark: 263 70% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 142 76% 46%; /* #22C55E Green */
-    --secondary-light: 142 76% 56%;
-    --secondary-dark: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 142 76% 36%; /* Matrix Green */
+    --secondary-light: 142 76% 46%;
+    --secondary-dark: 142 76% 26%;
+    --secondary-foreground: 0 0% 98%;
 
-    /* Neutral Palette */
-    --background: 0 0% 100%;
-    --foreground: 222 15% 15%;
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 10% 45%;
+    /* Dark Palette */
+    --background: 240 10% 3.9%; /* Deep Dark */
+    --foreground: 0 0% 98%; /* Near White */
+    --muted: 240 3.7% 15.9%; /* Dark Gray */
+    --muted-foreground: 240 5% 64.9%; /* Medium Gray */
     
     /* Semantic Colors */
-    --success: 142 76% 46%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
     --warning: 43 96% 60%;
     --warning-foreground: 0 0% 15%;
     --error: 0 72% 51%;
-    --error-foreground: 0 0% 100%;
+    --error-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
     
     /* UI Elements */
-    --card: 0 0% 100%;
-    --card-foreground: 222 15% 15%;
-    --border: 220 13% 91%;
-    --input: 220 13% 96%;
-    --ring: 238 86% 60%;
+    --card: 240 8% 8%;
+    --card-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 263 70% 60%;
     
     /* Interactive States */
-    --accent: 238 86% 97%;
-    --accent-foreground: 238 86% 20%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
     
     /* Popover */
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 15% 15%;
+    --popover: 240 8% 8%;
+    --popover-foreground: 0 0% 98%;
     
     /* Accessibility & Focus */
-    --focus-ring: 238 86% 60%;
-    --focus-ring-offset: 0 0% 100%;
+    --focus-ring: 263 70% 60%;
+    --focus-ring-offset: 240 10% 3.9%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(238 86% 60%), hsl(238 86% 70%));
-    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 46%), hsl(142 76% 56%));
-    --gradient-hero: linear-gradient(135deg, hsl(238 86% 60%) 0%, hsl(142 76% 46%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
+    /* Dark Theme Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(263 70% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-hero: linear-gradient(135deg, hsl(263 70% 60%) 0%, hsl(142 76% 36%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 8% 8%) 0%, hsl(240 6% 12%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 5% 6%));
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(220 15% 15% / 0.05);
