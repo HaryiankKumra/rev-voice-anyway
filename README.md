@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# 🧠 AI Projects – Haryiank Kumra  
 
-## Project info
+Welcome to my AI/ML project collection!  
+This repository brings together **three domains** where AI meets real-world applications:  
 
-**URL**: https://lovable.dev/projects/d1beea42-91d2-453a-9c16-7b989c6c7892
+1. 🎙️ **Voice Cloning / Generation**  
+2. ✋➡️🔤 **Sign Language to Text**  
+3. 🚨 **Smart Panic Detection Hardware**  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Projects Overview  
 
-**Use Lovable**
+### 1️⃣ Voice Cloning / Generation 🎙️  
+**Goal**: Recreate human-like voices or clone a specific voice for personalized TTS (Text-to-Speech).  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d1beea42-91d2-453a-9c16-7b989c6c7892) and start prompting.
+**Tech Stack**:  
+- Hugging Face TTS models (`xtts`, `bark`, `parler-tts`)  
+- PyTorch, Transformers  
+- Gradio (interactive UI)  
 
-Changes made via Lovable will be committed automatically to this repo.
+**Features**:  
+- Input text → Generate natural speech  
+- Clone a voice from a sample audio  
+- Multi-language support  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 2️⃣ Sign Language to Text ✋➡️🔤  
+**Goal**: Bridge communication between deaf/mute individuals and others by converting ASL alphabets into text.  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Model Used**: [`prithivMLmods/Alphabet-Sign-Language-Detection`](https://huggingface.co/prithivMLmods/Alphabet-Sign-Language-Detection)  
 
-Follow these steps:
+**Tech Stack**:  
+- Hugging Face Transformers + PyTorch  
+- OpenCV (frame extraction)  
+- Gradio (video upload + live prediction UI)  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+**Pipeline**:  
+📹 Upload a short video of an ASL sign →  
+🖼️ Extract frames →  
+🧮 Majority voting across frames →  
+📄 Predicted letter displayed  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 3️⃣ Smart Panic Detection Hardware 🚨  
+**Goal**: Detect stress or panic using physiological sensors and trigger alerts for safety.  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+**Hardware Components**:  
+- ESP32 / Arduino  
+- ECG, EDA, Temperature, Pulse sensors  
+- Supabase / FastAPI / MQTT for cloud backend  
 
-**Edit a file directly in GitHub**
+**Features**:  
+- Real-time stress & panic monitoring  
+- Embedded AI for on-device inference  
+- Panic button + automated alert system  
+- Dashboard/mobile integration for alerts  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🛠️ Setup Instructions  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d1beea42-91d2-453a-9c16-7b989c6c7892) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### 🔹 General Requirements  
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+pip install -r requirements.txt
