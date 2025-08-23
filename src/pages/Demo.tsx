@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import { AlertTriangle, Mic, Square, Play, Pause, Volume2 } from "lucide-react";
+import { AlertTriangle, Mic, Square, Play, Pause, Volume2, ExternalLink, Hand, Cpu } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const API_BASE = "http://localhost:8787";
@@ -24,12 +24,18 @@ const Demo = () => {
         </div>
 
         <Tabs defaultValue="classic" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
+          <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="classic" className="text-base">
               Classic TTS
             </TabsTrigger>
             <TabsTrigger value="clone" className="text-base">
-              New Mode (Record + Clone)
+              Voice Cloning
+            </TabsTrigger>
+            <TabsTrigger value="sign" className="text-base">
+              Sign Language
+            </TabsTrigger>
+            <TabsTrigger value="hardware" className="text-base">
+              Hardware
             </TabsTrigger>
           </TabsList>
 
@@ -38,7 +44,15 @@ const Demo = () => {
           </TabsContent>
 
           <TabsContent value="clone">
-            <VoiceCloneDemo />
+            <VoiceCloneRedirect />
+          </TabsContent>
+
+          <TabsContent value="sign">
+            <SignLanguageRedirect />
+          </TabsContent>
+
+          <TabsContent value="hardware">
+            <HardwareRedirect />
           </TabsContent>
         </Tabs>
       </div>
@@ -532,6 +546,129 @@ const VoiceCloneDemo = () => {
             This is a research prototype. Do not use someone else's voice without explicit consent. 
             Voice data is processed locally and temporarily for this demo session only.
           </p>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+const VoiceCloneRedirect = () => {
+  const handleRedirect = () => {
+    window.open('https://huggingface.co/spaces/your-voice-clone-demo', '_blank');
+  };
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Mic className="w-5 h-5" />
+          Voice Cloning Technology
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-center">
+        <div className="space-y-4">
+          <p className="text-muted-foreground">
+            Experience our advanced voice cloning technology that can learn and replicate your unique voice patterns.
+          </p>
+          <div className="bg-muted/50 p-4 rounded-lg">
+            <h3 className="font-semibold mb-2">Features:</h3>
+            <ul className="text-sm text-muted-foreground space-y-1">
+              <li>• Record your voice in just a few seconds</li>
+              <li>• AI learns your speech patterns</li>
+              <li>• Generate speech in your voice from any text</li>
+              <li>• High-quality audio output</li>
+            </ul>
+          </div>
+          <Button 
+            onClick={handleRedirect}
+            className="w-full"
+            size="lg"
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            Try Voice Cloning Demo
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+const SignLanguageRedirect = () => {
+  const handleRedirect = () => {
+    window.open('https://huggingface.co/spaces/your-sign-language-demo', '_blank');
+  };
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Hand className="w-5 h-5" />
+          Sign Language to Text
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-center">
+        <div className="space-y-4">
+          <p className="text-muted-foreground">
+            Convert sign language gestures into text using computer vision and machine learning.
+          </p>
+          <div className="bg-muted/50 p-4 rounded-lg">
+            <h3 className="font-semibold mb-2">Features:</h3>
+            <ul className="text-sm text-muted-foreground space-y-1">
+              <li>• Real-time hand gesture recognition</li>
+              <li>• Support for multiple sign languages</li>
+              <li>• Accurate text conversion</li>
+              <li>• Webcam-based detection</li>
+            </ul>
+          </div>
+          <Button 
+            onClick={handleRedirect}
+            className="w-full"
+            size="lg"
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            Try Sign Language Demo
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+const HardwareRedirect = () => {
+  const handleRedirect = () => {
+    window.open('https://your-esp32-hardware-demo.com', '_blank');
+  };
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Cpu className="w-5 h-5" />
+          Hardware Integration
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-6 text-center">
+        <div className="space-y-4">
+          <p className="text-muted-foreground">
+            Connect with ESP32-based hardware devices for IoT voice control and automation.
+          </p>
+          <div className="bg-muted/50 p-4 rounded-lg">
+            <h3 className="font-semibold mb-2">Features:</h3>
+            <ul className="text-sm text-muted-foreground space-y-1">
+              <li>• ESP32 microcontroller integration</li>
+              <li>• Wireless voice commands</li>
+              <li>• Real-time hardware control</li>
+              <li>• IoT device automation</li>
+            </ul>
+          </div>
+          <Button 
+            onClick={handleRedirect}
+            className="w-full"
+            size="lg"
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            Try Hardware Demo
+          </Button>
         </div>
       </CardContent>
     </Card>
