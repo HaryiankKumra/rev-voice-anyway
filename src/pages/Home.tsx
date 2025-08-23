@@ -334,7 +334,7 @@ const Home = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground text-lg">Call Us</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+91 7986520232</p>
                       <p className="text-muted-foreground">Available 24/7</p>
                     </div>
                   </div>
@@ -346,7 +346,7 @@ const Home = () => {
                     <div>
                       <h3 className="font-semibold text-foreground text-lg">Visit Us</h3>
                       <p className="text-muted-foreground">AI Research Lab</p>
-                      <p className="text-muted-foreground">Silicon Valley, CA</p>
+                      <p className="text-muted-foreground">Thapar University, Patiala</p>
                     </div>
                   </div>
                 </div>
