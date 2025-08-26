@@ -279,7 +279,7 @@ const Privacy = () => {
               </p>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Badge variant="outline">Last Updated</Badge>
-                <span>December 2024 (Prototype Version)</span>
+                <span>December 2025 (Prototype Version)</span>
               </div>
             </div>
           </CardContent>

@@ -164,7 +164,7 @@ const ClassicTTSDemo = () => {
               className="w-full mt-1 px-3 py-2 border border-input rounded-md bg-background"
             >
               <option value="en">English</option>
-              <option value="hi">Hindi</option>
+              
             </select>
           </div>
 

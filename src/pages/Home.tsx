@@ -323,8 +323,8 @@ const Home = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground text-lg">Email Us</h3>
-                      <p className="text-muted-foreground">contact@revoice.ai</p>
-                      <p className="text-muted-foreground">support@revoice.ai</p>
+                      <p className="text-muted-foreground">hello@revoice.dev</p>
+                      <p className="text-muted-foreground">hkumra_be23@thapar.edu</p>
                     </div>
                   </div>
 

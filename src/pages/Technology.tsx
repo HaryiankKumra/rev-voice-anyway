@@ -227,7 +227,7 @@ const Technology = () => {
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Web Speech API integration</li>
                   <li>• Basic voice cloning demo</li>
-                  <li>• English & Hindi support</li>
+                  <li>• English support</li>
                 </ul>
               </div>
               <div>

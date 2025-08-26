@@ -178,11 +178,11 @@ const Impact = () => {
                 <h3 className="font-semibold text-foreground mb-4">Market Opportunity</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">AAC market size (2024)</span>
+                    <span className="text-muted-foreground">AAC market size (2025)</span>
                     <span className="font-semibold">$3.2B</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Projected growth (2024-2029)</span>
+                    <span className="text-muted-foreground">Projected growth (2025-2030)</span>
                     <span className="font-semibold">8.5% CAGR</span>
                   </div>
                   <div className="flex justify-between items-center">
